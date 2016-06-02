@@ -4,6 +4,8 @@ import (
 	"log"
 	"os"
 
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -16,7 +18,9 @@ func main() {
 
 	router := gin.New()
 	router.Use(gin.Logger())
-	router.Static("/static", "static")
+	router.GET("/hello", func(c *gin.Context) {
+		c.String(http.StatusOK, "hello")
+	})
 
 	router.Run(":" + port)
 }
