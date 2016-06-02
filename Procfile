@@ -1,1 +1,1 @@
-web: linexxxxbot
+web: line_bot
