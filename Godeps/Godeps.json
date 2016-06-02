@@ -1,0 +1,6 @@
+{
+	"ImportPath": "line_bot",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
+	"Deps": []
+}
